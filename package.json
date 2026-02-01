@@ -1,0 +1,48 @@
+{
+  "name": "chronos-productivity",
+  "version": "1.0.0",
+  "author": "WD",
+  "description": "Sistema de produtividade com tarefas e calendário",
+  "main": "main.js",
+  "base": "./",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "make": "electron-forge make",
+    "start": "electron-forge start",
+    "package": "electron-forge package"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-deb": "^7.11.1",
+    "@electron-forge/maker-rpm": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "electron": "^40.1.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  },
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "chronos_productivity"
+          }
+        }
+      ]
+    }
+  }
+}

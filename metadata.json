@@ -1,0 +1,5 @@
+{
+  "name": "Chronos Productivity",
+  "description": "A minimalist, wireframe-style productivity application featuring a task manager, auto-saving notes, and a calendar with integrated alarms.",
+  "requestFramePermissions": []
+}
